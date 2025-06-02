@@ -3,7 +3,7 @@
 ## Descripción del Proyecto
 Este proyecto contiene 10 tablas HTML con diferentes estilos y funcionalidades, creadas para demostrar lo aprendido en clase de HTML:
 
-Estructura semántica de tablas (<table>, <thead>, <tbody>, <caption>).
+### Estructura semántica de tablas (<table>, <thead>, <tbody>, <caption>).
 
 Combinación de celdas (colspan, rowspan).
 
