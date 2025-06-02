@@ -3,7 +3,7 @@
 ## Descripción del Proyecto
 Este proyecto contiene 10 tablas HTML con diferentes estilos y funcionalidades, creadas para demostrar lo aprendido en clase de HTML:
 
-### Estructura semántica de tablas (<table>, <thead>, <tbody>, <caption>).
+### Estructura semántica de tablas (table,thead,tbody,caption).
 
 Combinación de celdas (colspan, rowspan).
 
@@ -33,7 +33,7 @@ Buenas prácticas de código dadas por el instructor Erik.
 ## Tabla completa - Combina todos los conceptos.
 
 # Buenas Prácticas Aplicadas
-✅ Uso de etiquetas semánticas (<thead>, <tbody>).
+✅ Uso de etiquetas semánticas (thead,tbody).
 ✅ CSS organizado (interno en el ejercicio, externo recomendado).
 ✅ Comentarios en el código explicando cada sección.
-✅ Tablas accesibles (con <caption> y atributos scope en <th>).
+✅ Tablas accesibles (con caption y atributos scope en "th").
