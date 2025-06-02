@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Tablas HTML</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Estilos para tablas */
+        .basica table, .basica th, .basica td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        
+        .bordes-colapsados table, .bordes-colapsados th, .bordes-colapsados td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        
+        .colores-filas tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .hover-efecto tr:hover {
+            background-color: #ddd;
+        }
+        
+        .padding-personalizado td {
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        .alineacion th {
+            text-align: left;
+        }
+        
+        .alineacion td {
+            text-align: right;
+        }
+        
+        .combinada th, .combinada td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        .titulo table {
+            width: 100%;
+        }
+        
+        .ancho-columna th:nth-child(1) {
+            width: 70%;
+        }
+        
+        .completa {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .completa th, .completa td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .completa th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .completa tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .completa tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio de Tablas HTML</h1>
+    <p>Este documento contiene 10 tablas diferentes que demuestran los conceptos aprendidos en clase.</p>
+    
+    <!-- Tabla 1: Estructura básica -->
+    <section class="basica">
+        <h2>1. Tabla básica</h2>
+        <p>Estructura mínima de una tabla con thead, tbody, th y td.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$1200</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td>$800</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Tabla 2: Bordes colapsados -->
+    <section class="bordes-colapsados">
+        <h2>2. Bordes colapsados</h2>
+        <p>Tabla con bordes colapsados (border-collapse: collapse).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Tabla 3: Colores en filas alternas -->
+    <section class="colores-filas">
+        <h2>3. Filas alternas con colores</h2>
+        <p>Tabla con colores alternos en filas usando nth-child.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Capital</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Colombia</td>
+                    <td>Bogotá</td>
+                </tr>
+                <tr>
+                    <td>Argentina</td>
+                    <td>Buenos Aires</td>
+                </tr>
+                <tr>
+                    <td>España</td>
+                    <td>Madrid</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Tabla 4: Efecto hover -->
+    <section class="hover-efecto">
+        <h2>4. Efecto hover</h2>
+        <p>Tabla con efecto al pasar el mouse (hover).</p>
+        <table border="1">
+            <tr>
+                <th>Fruta</th>
+                <th>Color</th>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>Rojo</td>
+            </tr>
+            <tr>
+                <td>Plátano</td>
+                <td>Amarillo</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 5: Padding personalizado -->
+    <section class="padding-personalizado">
+        <h2>5. Padding personalizado</h2>
+        <p>Tabla con diferentes valores de padding en cada lado.</p>
+        <table border="1">
+            <tr>
+                <th>Artículo</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Libro</td>
+                <td>Novela de ciencia ficción</td>
+            </tr>
+            <tr>
+                <td>Película</td>
+                <td>Documental sobre naturaleza</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 6: Alineación de texto -->
+    <section class="alineacion">
+        <h2>6. Alineación de texto</h2>
+        <p>Tabla con diferentes alineaciones de texto.</p>
+        <table border="1">
+            <tr>
+                <th>Nombre (izquierda)</th>
+                <th>Edad (derecha)</th>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>32</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 7: Celdas combinadas -->
+    <section class="combinada">
+        <h2>7. Celdas combinadas</h2>
+        <p>Tabla con colspan y rowspan.</p>
+        <table>
+            <tr>
+                <th colspan="2">Nombre completo</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Pérez</td>
+                <td rowspan="2">28</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>López</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 8: Título de tabla -->
+    <section class="titulo">
+        <h2>8. Título de tabla</h2>
+        <p>Tabla con caption (título descriptivo).</p>
+        <table border="1">
+            <caption>Lista de estudiantes</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Curso</th>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Historia</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 9: Ancho de columnas -->
+    <section class="ancho-columna">
+        <h2>9. Ancho de columnas</h2>
+        <p>Tabla con ancho específico para la primera columna (70%).</p>
+        <table border="1">
+            <tr>
+                <th>Descripción larga</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Este es un texto de ejemplo muy largo que demuestra el ancho de columna</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Tabla 10: Tabla completa con todos los estilos -->
+    <section>
+        <h2>10. Tabla completa con todos los estilos</h2>
+        <p>Tabla que combina todos los conceptos aprendidos.</p>
+        <table class="completa">
+            <caption>Información de empleados</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Departamento</th>
+                    <th>Salario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Gómez</td>
+                    <td>Ventas</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Carlos Ruiz</td>
+                    <td>IT</td>
+                    <td>$4,200</td>
+                </tr>
+                <tr>
+                    <td>María López</td>
+                    <td rowspan="2">Marketing</td>
+                    <td>$3,800</td>
+                </tr>
+                <tr>
+                    <td>Pedro Díaz</td>
+                    <td>$3,200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
